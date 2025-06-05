@@ -1,4 +1,3 @@
-/* Reset and base styles */
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +12,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Header Styles */
 header {
   display: flex;
   justify-content: space-between;
@@ -23,7 +21,6 @@ header {
   box-shadow: 0 4px 6px rgba(0,0,0,0.05);
   position: fixed;
   width: 100%;
-  top: 0;
   z-index: 10;
 }
 
@@ -44,13 +41,7 @@ nav a {
   text-decoration: none;
   color: #333;
   font-weight: 600;
-  font-size: 1.2rem;
-  transition: color 0.3s;
-}
-
-nav a:hover {
-  color: #ff6200;
-  text-decoration: underline;
+  font-size: 1.5rem;
 }
 
 .auth-buttons button {
@@ -58,10 +49,9 @@ nav a:hover {
   padding: 10px 20px;
   font-weight: 600;
   border: none;
-  border-radius: 25px;
+  border-radius: 20px;
   cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s;
+  font-size: 1.3rem;
 }
 
 .login {
@@ -70,127 +60,93 @@ nav a:hover {
   color: #ff6200;
 }
 
-.login:hover {
-  background-color: #ff6200;
-  color: white;
-}
-
 .signup {
   background-color: #ff6200;
-  color: white;
+  color: #fff;
 }
 
-.signup:hover {
-  background-color: #e55b00;
-}
-
-/* Hero Section */
 .hero {
-  position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start; 
   padding: 150px 60px 60px 60px;
-  min-height: 100vh;
-  background: url('model2.jpg') center/cover no-repeat;
+  height: 100vh;
+  background-image: url("model2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
   text-align: left;
-  overflow: hidden;
 }
 
-/* Dark overlay */
 .hero::after {
   content: "";
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5); 
   z-index: 1;
 }
 
 .hero-content {
   position: relative;
   z-index: 2;
-  max-width: 700px;
+  max-width: 50%;
 }
 
 .hero h1 {
-  font-size: 3.5rem;
+  font-size: 5rem;
   font-weight: 800;
   color: white;
   margin-bottom: 20px;
 }
 
 .hero p {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  color: bisque;
+  font-size: 2rem;
+  line-height: 1.8;
   margin-bottom: 30px;
+  max-width: 90%;
+  color: bisque;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Buttons Section */
 .buttons {
   display: flex;
+  gap: 20px;
   flex-wrap: wrap;
-  gap: 15px;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .play-now {
   background-color: #ff6200;
-  color: white;
+  color: #fff;
   border: none;
   border-radius: 25px;
   padding: 12px 25px;
   font-size: 1rem;
-  font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.play-now:hover {
-  background-color: #e55b00;
+  font-weight: 600;
 }
 
 .store-btn {
-  background-color: lightgray;
-  color: #333;
-  border-radius: 25px;
   padding: 12px 20px;
-  font-size: 0.95rem;
-  font-weight: 600;
+  border-radius: 25px;
   text-decoration: none;
-  transition: background-color 0.3s;
+  font-weight: 600;
+  font-size: 0.95rem;
+  background-color: lightslategray;
+  color: #fff;
 }
 
-.store-btn:hover {
-  background-color: #ccc;
+.store-btn.google {
+  background-color: lightslategray;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-  header {
-    padding: 15px 20px;
-  }
-
-  .hero {
-    flex-direction: column;
-    text-align: center;
-    padding: 120px 20px 40px 20px;
-  }
-
-  .hero-content {
-    max-width: 100%;
-  }
-
-  .hero h1 {
-    font-size: 2.5rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-  }
-
-  .buttons {
-    justify-content: center;
-  }
+.hero-image img {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
 }
