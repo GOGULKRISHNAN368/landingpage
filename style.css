@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  color: #333;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  background-color:bisque;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #ff6200;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+
+.auth-buttons button {
+  margin-left: 15px;
+  padding: 10px 20px;
+  font-weight: 600;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+
+.login {
+  background-color: transparent;
+  border: 2px solid #ff6200;
+  color: #ff6200;
+}
+
+.signup {
+  background-color: #ff6200;
+  color: #fff;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 150px 60px 60px 60px;
+  height: 100vh;
+  background-image: url("model2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero h1 {
+  font-size: 5rem;
+  font-weight: 800;
+  color:white;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 2rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  max-width: 90%;
+  color:bisque;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  size: 400px;
+}
+
+.play-now {
+  background-color: #ff6200;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.store-btn {
+  padding: 12px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  background-color:lightslategray;
+  color: #fff;
+}
+
+.store-btn.google {
+  background-color:lightslategray;
+}
+
+.hero-image img {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
